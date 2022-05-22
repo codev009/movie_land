@@ -1,6 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 
+import './App.css';
+import SearchIcon from './search.svg';
+
 const API_URL = 'http://www.omdbapi.com/?apikey=ed4ff5d2';
 
 const App = () => {
@@ -16,8 +19,11 @@ useEffect(() => {
 }, []);
 
 return (
-    <h1>App</h1>
-)
+   <div className="app">
+       <h1>MovieLand</h1>
+
+   </div>
+);
 }
 
 export default App;
